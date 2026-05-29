@@ -1,1063 +1,316 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/profile.png">
-    <title>Portofolio</title>
-    <meta name="description" content="Khoirul Anam"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-  </head>
-  <body id="top">
-    <header>
-      <div class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-success" color-on-scroll="400">
-          <div class="container">
-            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Resume</a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portofolio">Portofolio</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <meta name="description" content="Portfolio Khoirul Anam, Fullstack Web Developer">
+  <link rel="icon" type="image/png" href="images/profile.png">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body id="top">
 
-<div class="page-content">
-<div>
-<div class="profile-page">
-  <div class="wrapper">
-    <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/head.jfif');"></div>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/profile.png" alt="Image"/></a></div>
-          <div class="h2 title">Khoirul Anam</div>
-          <p class="category text-white">Full Stack Web Developer</p>
-          <a class="btn btn-success smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-success" href="Resume.pdf" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Resume</a>
-        </div>
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <a href="#top" class="nav-logo">Portfolio</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skill">Skills</a></li>
+    <li><a href="#portofolio">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <img src="images/profile.png" alt="Khoirul Anam" class="hero-avatar" onerror="this.style.display='none'">
+  <div class="hero-badge">Available for work</div>
+  <h1 class="hero-name">Khoirul <span>Anam</span></h1>
+  <p class="hero-sub">Fullstack Web Developer — membangun aplikasi web yang fungsional, responsif, dan berorientasi pengguna.</p>
+  <div class="hero-cta">
+    <a href="#contact" class="btn-primary-green">Hire Me</a>
+    <a href="Resume.pdf" target="_blank" class="btn-outline-green">Download CV</a>
+  </div>
+  <div class="hero-socials">
+    <a href="https://www.linkedin.com/in/khoirulanam5/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/khoirulanam5" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="http://instagram.com/khoirulanamm09" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/6282323647641/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="section-label">About Me</div>
+  <h2 class="section-title">Siapa Saya</h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>Halo! Saya <strong>Khoirul Anam</strong>, seorang Fullstack Web Developer dengan pengalaman 2 tahun dalam merancang dan mengembangkan aplikasi web yang fungsional, responsif, dan berorientasi pengguna.</p>
+      <p>Saya mengkhususkan diri pada <strong>backend development</strong> menggunakan PHP, CodeIgniter, dan Laravel, dengan pengalaman langsung dalam membangun sistem yang aman dan skalabel.</p>
+      <p>Selain development, saya memiliki pemahaman yang kuat tentang <strong>analisis dan desain sistem</strong> menggunakan FOD, DFD, UML, ERD, dan Flowchart untuk mendukung perencanaan terstruktur.</p>
+      <p>Saya juga menggunakan <strong>Git dan Docker</strong> untuk menjaga alur kerja pengembangan yang efisien, version control, dan lingkungan deployment yang konsisten.</p>
+    </div>
+    <div class="info-list">
+      <div class="info-item">
+        <i class="fas fa-envelope info-icon"></i>
+        <div><div class="info-label">Email</div><div class="info-val">khoirulanam592000@gmail.com</div></div>
       </div>
-      <div class="section">
-        <div class="container">
-          <div class="button-container">
-            <a class="btn btn-success btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/khoirulanam5/" target="_blank" rel="tooltip" title="Follow me on Linkedin"><i class="fa fa-linkedin"></i></a>
-            <a class="btn btn-success btn-round btn-lg btn-icon" href="http://instagram.com/khoirulanamm09" target="_blank" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
-            <a class="btn btn-success btn-round btn-lg btn-icon" href="https://github.com/khoirulanam5" target="_blank" rel="tooltip" title="Follow me on GitHub"><i class="fa fa-github"></i></a>
-            <a class="btn btn-success btn-round btn-lg btn-icon" href="https://wa.me/6282323647641/" target="_blank" rel="tooltip" title="Contact me on Whatsapp"><i class="fa fa-whatsapp"></i></a> 
-          </div>
-        </div>
+      <div class="info-item">
+        <i class="fab fa-linkedin-in info-icon"></i>
+        <div><div class="info-label">LinkedIn</div><div class="info-val">linkedin.com/in/khoirulanam5</div></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt info-icon"></i>
+        <div><div class="info-label">Lokasi</div><div class="info-val">Jepara, Indonesia</div></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-language info-icon"></i>
+        <div><div class="info-label">Bahasa</div><div class="info-val">Indonesia, English</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skill">
+  <div class="section-label">Technical Skills</div>
+  <h2 class="section-title">Keahlian</h2>
+  <div class="skills-categories reveal">
+    <div>
+      <div class="skill-cat-title">Frontend</div>
+      <div class="skills-grid">
+        <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">HTML</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">CSS</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="65"><div class="skill-header"><span class="skill-name">Vue.js</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-cat-title">Backend</div>
+      <div class="skills-grid">
+        <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">PHP</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">CodeIgniter</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="70"><div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-cat-title">Database &amp; Tools</div>
+      <div class="skills-grid">
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">PostgreSQL</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">Git</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">Docker</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-cat-title">Design System</div>
+      <div class="skills-grid">
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">FOD</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">DFD</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">UML</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">ERD</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">Flowchart</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="portofolio">
+  <div class="section-label">Work</div>
+  <h2 class="section-title">Project</h2>
+  <div class="projects-grid" id="projects-grid">
+    <!-- Generated by JS -->
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="section-label">Career</div>
+  <h2 class="section-title">Pengalaman Kerja</h2>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="tl-date"><strong>IT Programmer</strong>Feb 2026 – Saat ini</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+      <div class="tl-body">
+        <div class="tl-company">UIN Sunan Kudus</div>
+        <div class="tl-role">IT Programmer</div>
+        <ul>
+          <li>Mengembangkan dan memelihara aplikasi web internal menggunakan CodeIgniter dan MySQL.</li>
+          <li>Mendesain antarmuka interaktif dan responsif menggunakan HTML, CSS, JavaScript, dan Bootstrap.</li>
+          <li>Membangun sistem internal serta mengotomatisasi proses pengolahan data.</li>
+          <li>Menggunakan Git dan Docker untuk version control dan deployment.</li>
+          <li>Berkolaborasi dengan tim untuk meningkatkan pengalaman pengguna pada sistem internal kampus.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-date"><strong>Fullstack Developer</strong>Jul 2024 – Saat ini</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+      <div class="tl-body">
+        <div class="tl-company">Pekerja Lepas (Freelance)</div>
+        <div class="tl-role">Fullstack Web Developer</div>
+        <ul>
+          <li>Mengembangkan website dinamis yang user-friendly dan disesuaikan dengan kebutuhan klien.</li>
+          <li>Melakukan analisis dan perancangan sistem menggunakan FOD, DFD, UML, ERD, dan Flowchart.</li>
+          <li>Mengelola backend menggunakan PHP, CodeIgniter, dan Laravel; database MySQL dan PostgreSQL.</li>
+          <li>Mendesain antarmuka menggunakan HTML, CSS, JavaScript, Bootstrap, Tailwind, dan Vue.</li>
+          <li>Menggunakan Git dan Docker untuk version control serta otomatisasi development.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-date"><strong>Staff Magang</strong>Des 2022 – Feb 2023</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+      <div class="tl-body">
+        <div class="tl-company">Dinas Kesehatan Kab. Kudus</div>
+        <div class="tl-role">Staff Magang IT</div>
+        <ul>
+          <li>Mengelola data pengeluaran bulanan menggunakan Microsoft Excel.</li>
+          <li>Mengoperasikan sistem web ANJAB untuk entri dan sinkronisasi data.</li>
+          <li>Merancang dan mengembangkan sistem e-Cuti berbasis web untuk digitalisasi pengelolaan cuti pegawai.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-date"><strong>Operator Mesin</strong>Agust 2019 – Des 2020</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+      <div class="tl-body">
+        <div class="tl-company">PT. Jiale Indonesia Textile</div>
+        <div class="tl-role">Operator Mesin</div>
+        <ul>
+          <li>Mengoperasikan mesin potong kain berskala besar dengan akurasi tinggi.</li>
+          <li>Mengoperasikan mesin pencelupan untuk proses pewarnaan kain.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="tl-date"><strong>Operator Mesin</strong>Jul 2018 – Jun 2019</div>
+      <div class="tl-line"><div class="tl-dot"></div></div>
+      <div class="tl-body">
+        <div class="tl-company">PT. Pura Barutama Unit Smart Teknologi</div>
+        <div class="tl-role">Operator Mesin</div>
+        <ul>
+          <li>Mengoperasikan mesin sablon dan mesin hamada cetak tinggi.</li>
+          <li>Memproduksi berbagai jenis kartu: KTP, ATM, dan SIM card.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <div class="section-label">Education</div>
+  <h2 class="section-title">Pendidikan</h2>
+  <div class="edu-grid reveal">
+    <div class="edu-card">
+      <div class="edu-period">2020 – 2024</div>
+      <div class="edu-degree">S1 Sistem Informasi</div>
+      <div class="edu-school">Universitas Muria Kudus</div>
+      <div class="edu-desc">Menempuh pendidikan di bidang Sistem Informasi dengan fokus pada pengembangan perangkat lunak, analisis dan perancangan sistem, manajemen basis data, serta penerapan teknologi informasi untuk kebutuhan bisnis dan organisasi.</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-period">2015 – 2018</div>
+      <div class="edu-degree">Produksi Grafika</div>
+      <div class="edu-school">SMK Raden Umar Said</div>
+      <div class="edu-desc">Mempelajari dasar-dasar produksi grafika, desain visual, dan teknik percetakan, serta membangun pemahaman awal tentang komputer dan teknologi sebagai fondasi keterampilan teknis digital.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="section-label">Contact</div>
+  <h2 class="section-title">Hubungi Saya</h2>
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div><div class="ci-label">Alamat</div><div class="ci-val">Jepara, Indonesia</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-phone"></i></div>
+        <div><div class="ci-label">Telepon</div><div class="ci-val">+62 823-2364-7641</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+        <div><div class="ci-label">Email</div><div class="ci-val">khoirulanam592000@gmail.com</div></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon"><i class="fab fa-github"></i></div>
+        <div><div class="ci-label">GitHub</div><div class="ci-val">github.com/khoirulanam5</div></div>
+      </div>
+    </div>
+    <form class="contact-form" action="https://formspree.io/f/xyzykjvq" method="POST">
+      <div class="form-group"><input type="text" name="name" placeholder="Nama Anda" required></div>
+      <div class="form-group"><input type="text" name="Subject" placeholder="Subjek" required></div>
+      <div class="form-group"><input type="email" name="_replyto" placeholder="Email Anda" required></div>
+      <div class="form-group"><textarea name="message" placeholder="Pesan Anda..." required></textarea></div>
+      <button type="submit" class="btn-primary-green" style="border:none;width:fit-content;">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-socials">
+    <a href="https://wa.me/6282323647641/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/khoirulanam5/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/khoirulanam5" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/khoirulanamm09/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Khoirul Anam. All rights reserved.</div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Project Detail Modal -->
+<div id="project-modal">
+  <div class="modal-backdrop" onclick="closeModal()"></div>
+  <div class="modal-panel" id="modal-panel">
+    <div class="modal-drag"></div>
+    <div class="modal-header">
+      <div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-stack" id="modal-stack"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <p id="modal-desc"></p>
+      <div class="modal-images" id="modal-images"></div>
+      <div class="modal-actions">
+        <a id="modal-github" href="#" target="_blank" class="btn-primary-green" style="display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;">
+          <i class="fab fa-github"></i> Lihat di GitHub
+        </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About Me</div>
-            <p>
-              Hello! I'm Khoirul Anam, a Fullstack Web Developer with 2 years of experience
-              in designing and developing functional, responsive, and user-oriented web applications.
-              I specialize in backend development using PHP, CodeIgniter, and Laravel, with hands-on
-              experience in building secure and scalable systems.
-            </p>
-            <p>
-              I have strong experience in database management using MySQL and PostgreSQL, as well as
-              frontend development using HTML, CSS, JavaScript, Bootstrap, Tailwind, and Vue to create
-              clean, interactive, and responsive user interfaces.
-            </p>
-            <p>
-              In addition to development, I have a solid understanding of system analysis and design
-              using FOD, DFD, UML, ERD, and Flowcharts to support structured planning and efficient
-              application development.
-            </p>
-            <p>
-              I also use Git and Docker to maintain efficient development workflows, version control,
-              and consistent deployment environments. This portfolio showcases my skills, projects,
-              and professional experience. Feel free to reach out if you'd like to collaborate or
-              discuss a project.
-            </p>
-          </div>
-      </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email</strong></div>
-              <div class="col-sm-8">: khoirulanam592000@gmail.com</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">LinkedIn</strong></div>
-              <div class="col-sm-8">: linkedin.com/in/khoirulanam5</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address</strong></div>
-              <div class="col-sm-8">: Jepara - Indonesia</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language</strong></div>
-              <div class="col-sm-8">: Indonesia, English</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img id="lightbox-img" src="" alt="">
 </div>
 
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-
-        <!-- Frontend -->
-        <h6 class="skill-category">Frontend</h6>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">HTML</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;"></div>
-                <span class="progress-value">85%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">CSS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 80%;"></div>
-                <span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Bootstrap</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;"></div>
-                <span class="progress-value">85%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Tailwind</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Vue</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 65%;"></div>
-                <span class="progress-value">65%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend -->
-        <h6 class="skill-category mt-3">Backend</h6>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">PHP</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 80%;"></div>
-                <span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">CodeIgniter</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 80%;"></div>
-                <span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Laravel</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 70%;"></div>
-                <span class="progress-value">70%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Database & Tools -->
-        <h6 class="skill-category mt-3">Database & Tools</h6>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">MySQL</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">PostgreSQL</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 60%;"></div>
-                <span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">GIT</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Docker</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 60%;"></div>
-                <span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Design System -->
-        <h6 class="skill-category mt-3">Design System</h6>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">FOD</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">DFD</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 75%;"></div>
-                <span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">UML</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;"></div>
-                <span class="progress-value">85%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">ERD</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 80%;"></div>
-                <span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary">
-              <span class="progress-badge">Flowchart</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" style="width: 85%;"></div>
-                <span class="progress-value">85%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section" id="portofolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 ml-auto mr-auto">
-        <div class="h4 text-center mb-4 title">Project</div>
-      </div>
-    </div>
-
-    <div class="tab-content gallery">
-      <div class="tab-pane active" id="porto">
-        <div class="ml-auto mr-auto">
-          <div class="row">
-
-            <!-- 33 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto33-fpgrowth.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/Hotel-Room-Facility-Recommendation-System-with-Apriori-and-FP-Growth.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Rekomendasi Hotel (Apriori & FpGrowth)</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 32 & 31 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto32-kasir.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/kasir.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Manajemen Kasir</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto31-sipbap.JPG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/sipbap.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Bantuan Alat Pertanian</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 30 & 29 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto30-bk.png" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/bimbingan-konseling.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Bimbingan Konseling</div>
-                    <p>Laravel 12, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto29-bap.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/bap-imigrasi.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Berita Acara</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 28 & 27 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto28-pelayanan.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/pelayanan.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Pelayanan WNA</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto27-umkm.JPG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/umkm.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Pengajuan UMKM</div>
-                    <p>PHP, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 26 & 25 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto26-task.JPG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/task_management.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Task Management</div>
-                    <p>Laravel 12, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto25-warehouse.JPG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/warehouse.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Warehouse Inventori</div>
-                    <p>Laravel 12, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 24 & 23 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto24-pengadaan.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/pengadaan-barang.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Pengadaan Barang</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto23-perpus-qr.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/perpus-qr.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi E-Perpus</div>
-                    <p>CodeIgniter 4, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 22 & 21 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto22-ma.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/menu-ordering.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Order Makanan</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto21-stock_obat.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/stock-obat.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Stok Obat</div>
-                    <p>PHP, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 20 & 19 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto20-inventori_ban.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/inventori-toko-ban.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Inventori Toko Ban Motor</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto19-profile_match.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/profile-match.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Seleksi Siswa Berprestasi</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 18 & 17 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto18-rm.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/rekam-medis.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Rekam Medis</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto17-topsis.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/topsis.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Menentukan Siswa Terbaik</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 16 & 15 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto16-terminal.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/manajemen-terminal.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Manajemen Terminal</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto15-catering.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/manajemen-pemesanan-catering.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Catering</div>
-                    <p>PHP, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 14 & 13 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto14-rental.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/rental-mobil.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Rental Mobil</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto13-siluka.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/siluka.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Manajemen Klinik</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 12 & 11 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto12-aquarium.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/penjualan-aquarium.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Penjualan Aquarium</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto11-stunting.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/sistem-monitoring-stunting.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Monitoring Stunting</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 10 & 9 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto10-inventaris.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/inventaris-barang-non-medis-rs.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Inventaris</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto9-kpi.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/kpi-kinerja.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi KPI Karyawan</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 8 & 7 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto8-maintenance.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/Emaintenance.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Maintenance Kendaraan</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto7-surat.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/persuratan.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Persuratan</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 6 & 5 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto6-presensi.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/presensi.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Presensi</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto5-inventori.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/inventori.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Inventori</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 4 & 3 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto4-hijab.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/penjualan_hijab.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Penjualan Hijab</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto3-sparepart.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/penjualan_sparepart.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Penjualan Sparepart</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto2-roti.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/inventori-bahan-roti-fifo.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Inventori Bahan Baku Roti</div>
-                    <p>PHP, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <!-- 1 & 2 -->
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto1-bus.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/E-Tiket.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi E-Tiket & Penyewaan Bus</div>
-                    <p>CodeIgniter 3, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up">
-                <figure class="cc-effect">
-                  <img src="images/Porto-cuti.PNG" alt="Image"/>
-                  <figcaption>
-                    <a href="https://github.com/khoirulanam5/Sistem-Pengajuan-Cuti-Pegawai-Berbasis-Web.git" target="_blank">View Project</a>
-                    <div class="h4">Aplikasi Pengajuan Cuti Pegawai</div>
-                    <p>PHP, MySQL & Bootstrap</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>Feb 2026 – Saat ini</p>
-            <div class="h5">IT Programmer</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">UIN Sunan Kudus</div>
-            <ul>
-              <li>Mengembangkan dan memelihara aplikasi web internal menggunakan CodeIgniter dan MySQL.</li>
-              <li>Mendesain antarmuka interaktif dan responsif menggunakan HTML, CSS, JavaScript, dan Bootstrap.</li>
-              <li>Membangun sistem internal serta mengotomatisasi proses pengolahan data.</li>
-              <li>Menggunakan Git dan Docker untuk version control dan deployment.</li>
-              <li>Mengoptimalkan performa backend dan frontend agar aplikasi berjalan cepat, aman, dan user-friendly.</li>
-              <li>Berkolaborasi dengan tim untuk meningkatkan pengalaman pengguna pada sistem internal kampus.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>Jul 2024 – Saat ini</p>
-            <div class="h5">Fullstack Web Developer</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Pekerja Lepas</div>
-            <ul>
-              <li>Mengembangkan website dinamis yang user-friendly dan disesuaikan dengan kebutuhan klien.</li>
-              <li>Melakukan analisis dan perancangan sistem menggunakan FOD, DFD, UML, ERD, dan Flowchart.</li>
-              <li>Membangun dan mengoptimalkan website agar memiliki performa tinggi, responsif, dan aman.</li>
-              <li>Mendesain antarmuka interaktif menggunakan HTML, CSS, JavaScript, Bootstrap, Tailwind, dan Vue.</li>
-              <li>Mengelola pengembangan backend menggunakan PHP, CodeIgniter, dan Laravel.</li>
-              <li>Mengelola database menggunakan MySQL dan PostgreSQL.</li>
-              <li>Menggunakan Git dan Docker untuk version control serta otomatisasi proses development.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>Des 2022 – Feb 2023</p>
-            <div class="h5">Staff Magang</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Dinas Kesehatan Kabupaten Kudus</div>
-            <ul>
-              <li>Mengelola dan memproses data pengeluaran bulanan menggunakan Microsoft Excel.</li>
-              <li>Mengoperasikan sistem web ANJAB (Analisis Jabatan) untuk entri dan sinkronisasi data.</li>
-              <li>Mengekspor dan menyinkronkan data antara Excel dan sistem web ANJAB untuk menjaga konsistensi data.</li>
-              <li>Membantu revisi dan pembaruan data TPP (Tambahan Penghasilan Pegawai).</li>
-              <li>Merancang dan mengembangkan sistem e-Cuti berbasis web untuk digitalisasi pengelolaan cuti pegawai.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>Agust 2019 – Des 2020</p>
-            <div class="h5">Operator Mesin</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">PT. Jiale Indonesia Textile</div>
-            <ul>
-              <li>Mengoperasikan mesin potong untuk kain berskala besar dengan akurasi tinggi</li>
-              <li>Mengoperasikan mesin pencelupan untuk proses pewarnaan kain</li>
-              <li>Membuat dan memeriksa sampel kain sebelum diproses lebih lanjut</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>Jul 2018 – Jun 2019</p>
-            <div class="h5">Operator Mesin</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">PT. Pura Barutama Unit Smart Teknologi</div>
-            <ul>
-              <li>Mengoperasikan mesin sablon dan mesin hamada cetak tinggi</li>
-              <li>Memproduksi berbagai jenis kartu, termasuk KTP, ATM, dan SIM card</li>
-              <li>Memastikan kualitas output sesuai standar produksi</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section">
-  <div class="container cc-education">
-    <div class="h4 text-center mb-4 title">Pendidikan</div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2020 - 2024</p>
-            <div class="h5">Mahasiswa</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">S1 Sistem Informasi</div>
-            <p class="category">Universitas Muria Kudus</p>
-            <p>
-              Menempuh pendidikan di bidang Sistem Informasi dengan fokus pada pengembangan perangkat lunak,
-              analisis dan perancangan sistem, manajemen basis data, serta penerapan teknologi informasi untuk
-              mendukung kebutuhan bisnis dan organisasi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-success" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
-            <p>2015 - 2018</p>
-            <div class="h5">Siswa</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Produksi Grafika</div>
-            <p class="category">SMK Raden Umar Said</p>
-            <p>
-              Mempelajari dasar-dasar produksi grafika, desain visual, dan teknik percetakan, serta
-              membangun pemahaman awal tentang komputer dan teknologi yang menjadi fondasi dalam
-              pengembangan keterampilan teknis di bidang digital.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('images/contact.png');">
-    <div class="container">
-      <div class="cc-contact">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <form action="https://formspree.io/f/xyzykjvq" method="POST">
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Ketikan pesan" required="required"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <button class="btn btn-success" type="submit">Send</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <p class="mb-0"><strong>Alamat </strong></p>
-                    <p class="pb-2">Jepara - Indonesia</p>
-                    <p class="mb-0"><strong>Telepon</strong></p>
-                    <p class="pb-2">+62 823-2364-7641</p>
-                    <p class="mb-0"><strong>Email</strong></p>
-                    <p>khoirulanam592000@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-  </div>
-    <footer class="footer">
-      <div class="container text-center"><a class="cc-whatsapp btn btn-link" href="https://wa.me/6282323647641/" target="_blank"><i class="fa fa-whatsapp fa-2x " aria-hidden="true"></i></a><a class="cc-linkedin btn btn-link " href="https://www.linkedin.com/in/khoirulanam5/" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a><a class="cc-github btn btn-link" href="https://github.com/khoirulanam5" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="https://www.instagram.com/khoirulanamm09/" target="_blank"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
-      <div class="text-center text-muted">Khoirul Anam</div>
-      <div class="text-center text-muted">
-        <p>&copy; Resume.<br>Design - <a class="credit" href="http://instagram.com/khoirulanamm09" target="_blank">Khoirul Anam</a></p>
-      </div>
-    </footer>
-    <script src="js/core/jquery.3.2.1.min.js"></script>
-    <script src="js/core/popper.min.js"></script>
-    <script src="js/core/bootstrap.min.js"></script>
-    <script src="js/now-ui-kit.js?v=1.1.0"></script>
-    <script src="js/aos.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+<script src="scripts/main.js"></script>
+</body>
 </html>
