@@ -1,83 +1,90 @@
-# Personal Portfolio Website Khoirul Anam
+# 🌐 Portfolio — Khoirul Anam
 
-Portfolio pribadi yang menampilkan informasi lengkap tentang profil, pengalaman, dan proyek yang telah dikerjakan. Dibangun menggunakan **HTML**, **CSS**, **JavaScript**, dan **Bootstrap**.
-
----
-
-## 🚀 Features
-
-* **Home / Profile** – Menampilkan perkenalan singkat pemilik portfolio.
-* **About** – Berisi deskripsi diri, tujuan karier, dan informasi personal lainnya.
-* **Skills** – Menampilkan daftar kemampuan (technical & soft skills).
-* **Experience Project** – Merangkum proyek-proyek yang pernah dibuat.
-* **Experience Work** – Berisi riwayat pekerjaan atau pengalaman kerja.
-* **Study / Education** – Menampilkan latar belakang pendidikan.
-* **Contact** – Form kontak atau informasi yang dapat dihubungi.
+Portfolio pribadi berbasis web yang menampilkan profil, keahlian, pengalaman kerja, dan proyek-proyek yang telah dikerjakan.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## ✨ Fitur
 
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **Bootstrap 4/5** (silakan sesuaikan dengan versi yang digunakan)
+| Bagian | Deskripsi |
+|---|---|
+| **Hero** | Foto profil, badge status, CTA, dan link sosial media |
+| **About** | Deskripsi diri dan informasi kontak singkat |
+| **Skills** | Progress bar keahlian frontend, backend, database, dan design system |
+| **Projects** | Grid 33+ proyek dengan modal detail dan lightbox gambar |
+| **Experience** | Timeline pengalaman kerja |
+| **Education** | Riwayat pendidikan |
+| **Contact** | Form kontak terintegrasi Formspree |
 
 ---
 
-## 📂 Struktur Folder (Contoh)
+## 🛠️ Teknologi
+
+- **HTML5** — Struktur semantik
+- **CSS3** — Custom properties, animasi, dan responsive layout
+- **JavaScript (Vanilla)** — Interaktivitas tanpa framework
+- **Font Awesome 6** — Icon library
+- **Google Fonts** — Syne & DM Sans
+- **Formspree** — Backend form kontak
+
+---
+
+## 📂 Struktur Folder
 
 ```
-project-root/
-│── index.html
-│── about.html
-│── assets/
-│   ├── css/
-│   ├── js/
-│   ├── img/
-│── README.md
-```
-
----
-
-## 🔧 Cara Menjalankan Project
-
-1. Clone repository:
-
-   ```bash
-   git clone <repo-url>
-   ```
-2. Masuk ke folder project:
-
-   ```bash
-   cd nama-project
-   ```
-3. Jalankan di browser:
-
-   * Klik **index.html**, atau
-   * Gunakan Live Server (VSCode) untuk pengalaman yang lebih baik.
-
----
-
-## 📸 Screenshot (Opsional)
-
-Tambahkan screenshot tampilan website di sini:
-
-```
-![Home](assets/img/home.png)
-![About](assets/img/about.png)
+portfolio/
+├── index.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── main.js
+├── images/
+│   ├── profile.png
+│   └── Porto*.PNG / .JPG / .png
+└── Resume.pdf
 ```
 
 ---
 
-## 📞 Contact
+## 🚀 Cara Menjalankan
 
-Jika ingin menghubungi pemilik portfolio, gunakan informasi yang tersedia di halaman **Contact** di dalam website.
+```bash
+# Clone repository
+git clone https://github.com/khoirulanam5/portofolio.git
+
+# Masuk ke folder
+cd portofolio
+
+# Buka di browser
+# → Klik dua kali index.html, atau
+# → Gunakan Live Server di VS Code (Ctrl+Shift+P → "Open with Live Server")
+```
+
+> Tidak memerlukan Node.js, build tool, atau dependensi tambahan.
 
 ---
 
-## 📄 License
+## 📱 Responsif
 
-Project ini bersifat **open source** atau sesuai lisensi yang Anda tentukan.
+Dioptimalkan untuk berbagai ukuran layar:
+
+- **Desktop** — Layout grid multi-kolom, custom cursor
+- **Tablet** — Grid menyesuaikan
+- **Mobile** — Hamburger menu dengan slide-in drawer, overlay penutup
 
 ---
+
+## 📬 Kontak
+
+| Platform | Link |
+|---|---|
+| Email | khoirulanam592000@gmail.com |
+| LinkedIn | [linkedin.com/in/khoirulanam5](https://linkedin.com/in/khoirulanam5) |
+| GitHub | [github.com/khoirulanam5](https://github.com/khoirulanam5) |
+| WhatsApp | [+62 823-2364-7641](https://wa.me/6282323647641) |
+
+---
+
+## 📄 Lisensi
+
+Proyek ini bersifat open source. Bebas digunakan sebagai referensi atau template dengan mencantumkan kredit.

@@ -16,16 +16,9 @@
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
-<!-- Navbar -->
+<!-- Navbar: hanya logo + hamburger. nav-links di-inject ke body via JS -->
 <nav id="navbar">
-  <a href="#top" class="nav-logo">Portfolio</a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skill">Skills</a></li>
-    <li><a href="#portofolio">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <a href="#top" class="nav-logo">Portofolio</a>
   <div class="hamburger" id="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
@@ -53,12 +46,12 @@
 <!-- About -->
 <section id="about">
   <div class="section-label">About Me</div>
-  <h2 class="section-title">Siapa Saya</h2>
+  <h2 class="section-title">Tentang Saya</h2>
   <div class="about-grid reveal">
     <div class="about-text">
       <p>Halo! Saya <strong>Khoirul Anam</strong>, seorang Fullstack Web Developer dengan pengalaman 2 tahun dalam merancang dan mengembangkan aplikasi web yang fungsional, responsif, dan berorientasi pengguna.</p>
-      <p>Saya mengkhususkan diri pada <strong>backend development</strong> menggunakan PHP, CodeIgniter, dan Laravel, dengan pengalaman langsung dalam membangun sistem yang aman dan skalabel.</p>
-      <p>Selain development, saya memiliki pemahaman yang kuat tentang <strong>analisis dan desain sistem</strong> menggunakan FOD, DFD, UML, ERD, dan Flowchart untuk mendukung perencanaan terstruktur.</p>
+      <p>Saya mengkhususkan diri pada <strong>backend development</strong> menggunakan PHP, CodeIgniter, dan Laravel, dengan pengalaman langsung dalam membangun sistem yang aman dan skalabel. Di sisi <strong>frontend</strong>, saya menggunakan HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, dan Vue.js untuk membangun antarmuka yang interaktif dan responsif.</p>
+      <p>Selain development, saya memiliki pemahaman yang kuat tentang <strong>analisis dan desain sistem</strong> menggunakan FOD, UML, ERD, dan Flowchart untuk mendukung perencanaan terstruktur.</p>
       <p>Saya juga menggunakan <strong>Git dan Docker</strong> untuk menjaga alur kerja pengembangan yang efisien, version control, dan lingkungan deployment yang konsisten.</p>
     </div>
     <div class="info-list">
@@ -95,7 +88,7 @@
         <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-item" data-pct="65"><div class="skill-header"><span class="skill-name">Vue.js</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="65"><div class="skill-header"><span class="skill-name">Vue.js</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
       </div>
     </div>
     <div>
@@ -103,23 +96,22 @@
       <div class="skills-grid">
         <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">PHP</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">CodeIgniter</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-item" data-pct="70"><div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="70"><div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
       </div>
     </div>
     <div>
       <div class="skill-cat-title">Database &amp; Tools</div>
       <div class="skills-grid">
         <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">PostgreSQL</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">PostgreSQL</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">Git</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">Docker</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+        <div class="skill-item" data-pct="60"><div class="skill-header"><span class="skill-name">Docker</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
       </div>
     </div>
     <div>
       <div class="skill-cat-title">Design System</div>
       <div class="skills-grid">
         <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">FOD</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-        <div class="skill-item" data-pct="75"><div class="skill-header"><span class="skill-name">DFD</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">UML</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="80"><div class="skill-header"><span class="skill-name">ERD</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
         <div class="skill-item" data-pct="85"><div class="skill-header"><span class="skill-name">Flowchart</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
@@ -132,9 +124,7 @@
 <section id="portofolio">
   <div class="section-label">Work</div>
   <h2 class="section-title">Project</h2>
-  <div class="projects-grid" id="projects-grid">
-    <!-- Generated by JS -->
-  </div>
+  <div class="projects-grid" id="projects-grid"></div>
 </section>
 
 <!-- Experience -->
@@ -165,7 +155,7 @@
         <div class="tl-role">Fullstack Web Developer</div>
         <ul>
           <li>Mengembangkan website dinamis yang user-friendly dan disesuaikan dengan kebutuhan klien.</li>
-          <li>Melakukan analisis dan perancangan sistem menggunakan FOD, DFD, UML, ERD, dan Flowchart.</li>
+          <li>Melakukan analisis dan perancangan sistem menggunakan FOD, UML, ERD, dan Flowchart.</li>
           <li>Mengelola backend menggunakan PHP, CodeIgniter, dan Laravel; database MySQL dan PostgreSQL.</li>
           <li>Mendesain antarmuka menggunakan HTML, CSS, JavaScript, Bootstrap, Tailwind, dan Vue.</li>
           <li>Menggunakan Git dan Docker untuk version control serta otomatisasi development.</li>
@@ -260,7 +250,7 @@
       <div class="form-group"><input type="text" name="Subject" placeholder="Subjek" required></div>
       <div class="form-group"><input type="email" name="_replyto" placeholder="Email Anda" required></div>
       <div class="form-group"><textarea name="message" placeholder="Pesan Anda..." required></textarea></div>
-      <button type="submit" class="btn-primary-green" style="border:none;width:fit-content;">Kirim Pesan</button>
+      <button type="submit" class="btn-primary-green btn-submit">Kirim Pesan</button>
     </form>
   </div>
 </section>
@@ -273,7 +263,7 @@
     <a href="https://github.com/khoirulanam5" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://www.instagram.com/khoirulanamm09/" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
-  <div class="footer-copy">&copy; 2025 Khoirul Anam. All rights reserved.</div>
+  <div class="footer-copy">&copy; 2024. All rights reserved.</div>
 </footer>
 
 <!-- Scroll to top -->
@@ -297,7 +287,7 @@
       <p id="modal-desc"></p>
       <div class="modal-images" id="modal-images"></div>
       <div class="modal-actions">
-        <a id="modal-github" href="#" target="_blank" class="btn-primary-green" style="display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;">
+        <a id="modal-github" href="#" target="_blank" class="btn-primary-green btn-github">
           <i class="fab fa-github"></i> Lihat di GitHub
         </a>
       </div>
