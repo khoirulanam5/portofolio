@@ -26,14 +26,78 @@ const projects = [
   { id:10, title:'Aplikasi Inventaris', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto10-inventaris.PNG', github:'https://github.com/khoirulanam5/inventaris-barang-non-medis-rs.git', desc:'Sistem inventaris barang non-medis rumah sakit dengan fitur QR code aset, mutasi barang antar departemen, dan laporan kondisi aset.', images:['images/Porto10-inventaris.PNG'] },
   { id:9, title:'Aplikasi KPI Karyawan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto9-kpi.PNG', github:'https://github.com/khoirulanam5/kpi-kinerja.git', desc:'Sistem evaluasi KPI karyawan dengan indikator kinerja yang dapat dikustomisasi, dashboard performa, dan laporan penilaian per periode.', images:['images/Porto9-kpi.PNG'] },
   { id:8, title:'Aplikasi Maintenance Kendaraan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto8-maintenance.PNG', github:'https://github.com/khoirulanam5/Emaintenance.git', desc:'Sistem manajemen perawatan kendaraan operasional dengan jadwal servis, riwayat perbaikan, biaya maintenance, dan alert jadwal rutin.', images:['images/Porto8-maintenance.PNG'] },
-  { id:7, title:'Aplikasi Persuratan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto7-surat.PNG', github:'https://github.com/khoirulanam5/persuratan.git', desc:'Sistem persuratan digital untuk instansi pemerintah dan swasta dengan fitur surat masuk/keluar, disposisi, dan arsip dokumen terstruktur.', images:['images/Porto7-surat.PNG'] },
-  { id:6, title:'Aplikasi Presensi', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto6-presensi.PNG', github:'https://github.com/khoirulanam5/presensi.git', desc:'Sistem absensi karyawan berbasis web dengan integrasi QR code, rekap kehadiran otomatis, izin/cuti online, dan laporan bulanan.', images:['images/Porto6-presensi.PNG'] },
-  { id:5, title:'Aplikasi Inventori', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto5-inventori.PNG', github:'https://github.com/khoirulanam5/inventori.git', desc:'Sistem manajemen inventori barang umum dengan pencatatan keluar-masuk, stok minimum alert, laporan persediaan, dan manajemen supplier.', images:['images/Porto5-inventori.PNG'] },
-  { id:4, title:'Aplikasi Penjualan Hijab', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto4-hijab.PNG', github:'https://github.com/khoirulanam5/penjualan_hijab.git', desc:'Toko online busana muslim dengan katalog produk, keranjang belanja, manajemen pesanan dan pengiriman, serta laporan penjualan.', images:['images/Porto4-hijab.PNG'] },
-  { id:3, title:'Aplikasi Penjualan Sparepart', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto3-sparepart.PNG', github:'https://github.com/khoirulanam5/penjualan_sparepart.git', desc:'Sistem penjualan sparepart kendaraan dengan manajemen stok per kategori, pencarian cepat, transaksi kasir, dan laporan stok harian.', images:['images/Porto3-sparepart.PNG'] },
-  { id:2, title:'Inventori Bahan Baku Roti', stack:['PHP','MySQL','Bootstrap'], img:'images/Porto2-roti.PNG', github:'https://github.com/khoirulanam5/inventori-bahan-roti-fifo.git', desc:'Sistem inventori bahan baku roti dengan metode FIFO untuk memastikan bahan terlama digunakan lebih dulu, dilengkapi alert kadaluarsa.', images:['images/Porto2-roti.PNG'] },
-  { id:1, title:'Aplikasi E-Tiket & Penyewaan Bus', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto1-bus.PNG', github:'https://github.com/khoirulanam5/E-Tiket.git', desc:'Platform pemesanan tiket dan penyewaan bus online dengan fitur pemilihan kursi interaktif, pembayaran digital, dan manajemen armada.', images:['images/Porto1-bus.PNG'] },
-  { id:0, title:'Aplikasi Pengajuan Cuti Pegawai', stack:['PHP','MySQL','Bootstrap'], img:'images/Porto-cuti.PNG', github:'https://github.com/khoirulanam5/Sistem-Pengajuan-Cuti-Pegawai-Berbasis-Web.git', desc:'Sistem pengajuan cuti pegawai digital dengan alur persetujuan multi-level, kalender cuti tim, saldo cuti otomatis, dan notifikasi status.', images:['images/Porto-cuti.PNG'] },
+  {
+    id: 7,
+    title: 'Aplikasi Persuratan',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/8.surat/4.PNG',
+    github: 'https://github.com/khoirulanam5/persuratan.git',
+    desc: 'Sistem persuratan digital untuk instansi pemerintah dan swasta dengan fitur surat masuk/keluar, disposisi, dan arsip dokumen terstruktur.',
+    images: Array.from({ length: 10 }, (_, i) => `images/8.surat/${i + 1}.PNG`)
+  },
+  {
+    id: 6,
+    title: 'Aplikasi Presensi',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/7.presensi/1.PNG',
+    github: 'https://github.com/khoirulanam5/presensi.git',
+    desc: 'Sistem absensi karyawan berbasis web dengan integrasi QR code, rekap kehadiran otomatis, izin/cuti online, dan laporan bulanan.',
+    images: Array.from({ length: 10 }, (_, i) => `images/7.presensi/${i + 1}.PNG`)
+  },
+  {
+    id: 5,
+    title: 'Aplikasi Inventori',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/6.inventori/2.PNG',
+    github: 'https://github.com/khoirulanam5/inventori.git',
+    desc: 'Sistem manajemen inventori barang umum dengan pencatatan keluar-masuk, stok minimum alert, laporan persediaan, dan manajemen supplier.',
+    images: Array.from({ length: 10 }, (_, i) => `images/6.inventori/${i + 1}.PNG`)
+  },
+  {
+    id: 4,
+    title: 'Aplikasi Penjualan Hijab',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/5.tasbiha/1.PNG',
+    github: 'https://github.com/khoirulanam5/penjualan_hijab.git',
+    desc: 'Toko online busana muslim dengan katalog produk, keranjang belanja, manajemen pesanan dan pengiriman, serta laporan penjualan.',
+    images: Array.from({ length: 10 }, (_, i) => `images/5.tasbiha/${i + 1}.PNG`)
+  },
+  {
+    id: 3,
+    title: 'Aplikasi Penjualan Sparepart',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/4.sparepart/5.PNG',
+    github: 'https://github.com/khoirulanam5/penjualan_sparepart.git',
+    desc: 'Sistem penjualan sparepart kendaraan dengan manajemen stok per kategori, pencarian cepat, transaksi kasir, dan laporan stok harian.',
+    images: Array.from({ length: 10 }, (_, i) => `images/4.sparepart/${i + 1}.PNG`)
+  },
+  {
+    id: 2,
+    title: 'Inventori Bahan Baku Roti',
+    stack: ['PHP', 'MySQL', 'Bootstrap'],
+    img: 'images/3.roti/1.PNG',
+    github: 'https://github.com/khoirulanam5/inventori-bahan-roti-fifo.git',
+    desc: 'Sistem inventori bahan baku roti dengan metode FIFO untuk memastikan bahan terlama digunakan lebih dulu, dilengkapi alert kadaluarsa.',
+    images: Array.from({ length: 10 }, (_, i) => `images/3.roti/${i + 1}.PNG`)
+  },
+  {
+    id: 1,
+    title: 'Aplikasi E-Tiket & Penyewaan Bus',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/2.bus/6.PNG',
+    github: 'https://github.com/khoirulanam5/E-Tiket.git',
+    desc: 'Platform pemesanan tiket dan penyewaan bus online dengan fitur pemilihan kursi interaktif, pembayaran digital, dan manajemen armada.',
+    images: Array.from({ length: 10 }, (_, i) => `images/2.bus/${i + 1}.PNG`)
+  },
+  {
+    id: 0,
+    title: 'Aplikasi Pengajuan Cuti Pegawai',
+    stack: ['PHP', 'MySQL', 'Bootstrap'],
+    img: 'images/1.cuti/1.PNG',
+    github: 'https://github.com/khoirulanam5/Sistem-Pengajuan-Cuti-Pegawai-Berbasis-Web.git',
+    desc: 'Sistem pengajuan cuti pegawai digital dengan alur persetujuan multi-level, kalender cuti tim, saldo cuti otomatis, dan notifikasi status.',
+    images: Array.from({ length: 10 }, (_, i) => `images/1.cuti/${i + 1}.PNG`)
+  }
 ];
 
 /* =========================================================
