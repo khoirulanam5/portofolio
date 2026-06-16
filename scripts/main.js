@@ -16,16 +16,96 @@ const projects = [
   { id:20, title:'Inventori Toko Ban Motor', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto20-inventori_ban.PNG', github:'https://github.com/khoirulanam5/inventori-toko-ban.git', desc:'Sistem inventori khusus toko ban motor dengan manajemen stok berdasarkan ukuran, merk, dan tipe ban, serta laporan penjualan harian.', images:['images/Porto20-inventori_ban.PNG'] },
   { id:19, title:'Seleksi Siswa Berprestasi', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto19-profile_match.PNG', github:'https://github.com/khoirulanam5/profile-match.git', desc:'Sistem pendukung keputusan seleksi siswa berprestasi menggunakan metode Profile Matching dengan kriteria akademik dan non-akademik terukur.', images:['images/Porto19-profile_match.PNG'] },
   { id:18, title:'Aplikasi Rekam Medis', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto18-rm.PNG', github:'https://github.com/khoirulanam5/rekam-medis.git', desc:'Sistem rekam medis elektronik untuk klinik dan puskesmas dengan fitur riwayat kunjungan, resep digital, dan laporan statistik kesehatan.', images:['images/Porto18-rm.PNG'] },
-  { id:17, title:'Aplikasi Menentukan Siswa Terbaik', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto17-topsis.PNG', github:'https://github.com/khoirulanam5/topsis.git', desc:'Sistem pendukung keputusan penentuan siswa terbaik menggunakan metode TOPSIS dengan bobot kriteria yang dapat dikonfigurasi oleh admin.', images:['images/Porto17-topsis.PNG'] },
-  { id:16, title:'Aplikasi Manajemen Terminal', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto16-terminal.PNG', github:'https://github.com/khoirulanam5/manajemen-terminal.git', desc:'Sistem manajemen terminal bus untuk pencatatan kedatangan/keberangkatan, data penumpang, retribusi, dan laporan operasional terminal.', images:['images/Porto16-terminal.PNG'] },
-  { id:15, title:'Aplikasi Catering', stack:['PHP','MySQL','Bootstrap'], img:'images/Porto15-catering.PNG', github:'https://github.com/khoirulanam5/manajemen-pemesanan-catering.git', desc:'Sistem pemesanan dan manajemen catering dengan fitur menu planner, jadwal pengiriman, invoice otomatis, dan manajemen bahan baku.', images:['images/Porto15-catering.PNG'] },
-  { id:14, title:'Aplikasi Rental Mobil', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto14-rental.PNG', github:'https://github.com/khoirulanam5/rental-mobil.git', desc:'Sistem rental mobil lengkap dengan manajemen armada, booking online, kalkulasi biaya otomatis, dan laporan pendapatan periodik.', images:['images/Porto14-rental.PNG'] },
-  { id:13, title:'Aplikasi Manajemen Klinik', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto13-siluka.PNG', github:'https://github.com/khoirulanam5/siluka.git', desc:'Sistem informasi klinik terintegrasi mencakup pendaftaran pasien, antrian dokter, rekam medis, apotek, dan billing pasien secara digital.', images:['images/Porto13-siluka.PNG'] },
-  { id:12, title:'Aplikasi Penjualan Aquarium', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto12-aquarium.PNG', github:'https://github.com/khoirulanam5/penjualan-aquarium.git', desc:'Toko online aquarium dengan katalog produk, manajemen pesanan, stok ikan dan perlengkapan, serta laporan penjualan terintegrasi.', images:['images/Porto12-aquarium.PNG'] },
-  { id:11, title:'Aplikasi Monitoring Stunting', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto11-stunting.PNG', github:'https://github.com/khoirulanam5/sistem-monitoring-stunting.git', desc:'Sistem monitoring pertumbuhan balita berbasis web untuk deteksi dini stunting dengan grafik perkembangan, alert risiko, dan laporan posyandu.', images:['images/Porto11-stunting.PNG'] },
-  { id:10, title:'Aplikasi Inventaris', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto10-inventaris.PNG', github:'https://github.com/khoirulanam5/inventaris-barang-non-medis-rs.git', desc:'Sistem inventaris barang non-medis rumah sakit dengan fitur QR code aset, mutasi barang antar departemen, dan laporan kondisi aset.', images:['images/Porto10-inventaris.PNG'] },
-  { id:9, title:'Aplikasi KPI Karyawan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto9-kpi.PNG', github:'https://github.com/khoirulanam5/kpi-kinerja.git', desc:'Sistem evaluasi KPI karyawan dengan indikator kinerja yang dapat dikustomisasi, dashboard performa, dan laporan penilaian per periode.', images:['images/Porto9-kpi.PNG'] },
-  { id:8, title:'Aplikasi Maintenance Kendaraan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto8-maintenance.PNG', github:'https://github.com/khoirulanam5/Emaintenance.git', desc:'Sistem manajemen perawatan kendaraan operasional dengan jadwal servis, riwayat perbaikan, biaya maintenance, dan alert jadwal rutin.', images:['images/Porto8-maintenance.PNG'] },
+  {
+    id: 17,
+    title: 'Aplikasi Menentukan Siswa Terbaik',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/18.topsis/6.PNG',
+    github: 'https://github.com/khoirulanam5/topsis.git',
+    desc: 'Sistem pendukung keputusan penentuan siswa terbaik menggunakan metode TOPSIS dengan bobot kriteria yang dapat dikonfigurasi oleh admin.',
+    images: Array.from({ length: 10 }, (_, i) => `images/18.topsis/${i + 1}.PNG`)
+  },
+  {
+    id: 16,
+    title: 'Aplikasi Manajemen Terminal',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/17.terminal/2.PNG',
+    github: 'https://github.com/khoirulanam5/manajemen-terminal.git',
+    desc: 'Sistem manajemen terminal bus untuk pencatatan kedatangan/keberangkatan, data penumpang, retribusi, dan laporan operasional terminal.',
+    images: Array.from({ length: 10 }, (_, i) => `images/17.terminal/${i + 1}.PNG`)
+  },
+  {
+    id: 15,
+    title: 'Aplikasi Manajemen Catering',
+    stack: ['PHP', 'MySQL', 'Bootstrap'],
+    img: 'images/16.catering/1.PNG',
+    github: 'https://github.com/khoirulanam5/manajemen-pemesanan-catering.git',
+    desc: 'Sistem pemesanan dan manajemen catering dengan fitur menu planner, jadwal pengiriman, invoice otomatis, dan manajemen bahan baku.',
+    images: Array.from({ length: 10 }, (_, i) => `images/16.catering/${i + 1}.PNG`)
+  },
+  {
+    id: 14,
+    title: 'Aplikasi Rental Mobil',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/15.rental/4.PNG',
+    github: 'https://github.com/khoirulanam5/rental-mobil.git',
+    desc: 'Sistem rental mobil lengkap dengan manajemen armada, booking online, kalkulasi biaya otomatis, dan laporan pendapatan periodik.',
+    images: Array.from({ length: 10 }, (_, i) => `images/15.rental/${i + 1}.PNG`)
+  },
+  {
+    id: 13,
+    title: 'Aplikasi Manajemen Klinik',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/14.siluka/5.PNG',
+    github: 'https://github.com/khoirulanam5/siluka.git',
+    desc: 'Sistem informasi klinik terintegrasi mencakup pendaftaran pasien, antrian dokter, rekam medis, apotek, dan billing pasien secara digital.',
+    images: Array.from({ length: 10 }, (_, i) => `images/14.siluka/${i + 1}.PNG`)
+  },
+  {
+    id: 12,
+    title: 'Aplikasi Penjualan Aquarium',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/13.aquarium/8.PNG',
+    github: 'https://github.com/khoirulanam5/penjualan-aquarium.git',
+    desc: 'Toko online aquarium dengan katalog produk, manajemen pesanan, stok ikan dan perlengkapan, serta laporan penjualan terintegrasi.',
+    images: Array.from({ length: 10 }, (_, i) => `images/13.aquarium/${i + 1}.PNG`)
+  },
+  {
+    id: 11,
+    title: 'Aplikasi Monitoring Data Stunting',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/12.stunting/9.PNG',
+    github: 'https://github.com/khoirulanam5/sistem-monitoring-stunting.git',
+    desc: 'Sistem monitoring pertumbuhan balita berbasis web untuk deteksi dini stunting dengan grafik perkembangan, alert risiko, dan laporan posyandu.',
+    images: Array.from({ length: 10 }, (_, i) => `images/12.stunting/${i + 1}.PNG`)
+  },
+  {
+    id: 10,
+    title: 'Aplikasi Inventaris',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/11.inventaris/1.PNG',
+    github: 'https://github.com/khoirulanam5/inventaris-barang-non-medis-rs.git',
+    desc: 'Sistem inventaris barang non-medis rumah sakit dengan fitur QR code aset, mutasi barang antar departemen, dan laporan kondisi aset.',
+    images: Array.from({ length: 10 }, (_, i) => `images/11.inventaris/${i + 1}.PNG`)
+  },
+  {
+    id: 9,
+    title: 'Aplikasi KPI Karyawan',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/10.kpikinerja/10.PNG',
+    github: 'https://github.com/khoirulanam5/kpi-kinerja.git',
+    desc: 'Sistem evaluasi KPI karyawan dengan indikator kinerja yang dapat dikustomisasi, dashboard performa, dan laporan penilaian per periode.',
+    images: Array.from({ length: 10 }, (_, i) => `images/10.kpikinerja/${i + 1}.PNG`)
+  },
+  {
+    id: 8,
+    title: 'Aplikasi Maintenance Kendaraan',
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
+    img: 'images/9.maintenance/6.PNG',
+    github: 'https://github.com/khoirulanam5/Emaintenance.git',
+    desc: 'Sistem manajemen perawatan kendaraan operasional dengan jadwal servis, riwayat perbaikan, biaya maintenance, dan alert jadwal rutin.',
+    images: Array.from({ length: 10 }, (_, i) => `images/9.maintenance/${i + 1}.PNG`)
+  },
   {
     id: 7,
     title: 'Aplikasi Persuratan',
