@@ -1,23 +1,142 @@
 /* ── Project data ── */
 const projects = [
-  { id:33, title:'Rekomendasi Hotel (Apriori & FP-Growth)', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto33-fpgrowth.PNG', github:'https://github.com/khoirulanam5/Hotel-Room-Facility-Recommendation-System-with-Apriori-and-FP-Growth.git', desc:'Sistem rekomendasi fasilitas kamar hotel menggunakan algoritma Apriori dan FP-Growth untuk menemukan pola asosiasi dari data transaksi tamu secara efisien.', images:['images/Porto33-fpgrowth.PNG'] },
-  { id:32, title:'Aplikasi Manajemen Kasir', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto32-kasir.PNG', github:'https://github.com/khoirulanam5/kasir.git', desc:'Aplikasi kasir berbasis web untuk manajemen transaksi penjualan, stok produk, laporan harian, dan pengelolaan data pelanggan secara real-time.', images:['images/Porto32-kasir.PNG'] },
-  { id:31, title:'Aplikasi Bantuan Alat Pertanian', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto31-sipbap.JPG', github:'https://github.com/khoirulanam5/sipbap.git', desc:'Sistem informasi pengajuan dan pengelolaan bantuan alat pertanian untuk memfasilitasi proses administrasi antara petani dan dinas terkait.', images:['images/Porto31-sipbap.JPG'] },
-  { id:30, title:'Aplikasi Bimbingan Konseling', stack:['Laravel 12','MySQL','Bootstrap'], img:'images/Porto30-bk.png', github:'https://github.com/khoirulanam5/bimbingan-konseling.git', desc:'Sistem manajemen bimbingan konseling siswa yang memfasilitasi pencatatan sesi konseling, laporan perkembangan, dan komunikasi antara guru BK dan siswa.', images:['images/Porto30-bk.png'] },
-  { id:29, title:'Aplikasi Berita Acara', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto29-bap.PNG', github:'https://github.com/khoirulanam5/bap-imigrasi.git', desc:'Sistem pengelolaan berita acara pemeriksaan digital untuk kantor imigrasi, dilengkapi fitur tanda tangan digital dan arsip dokumen.', images:['images/Porto29-bap.PNG'] },
-  { id:28, title:'Aplikasi Pelayanan WNA', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto28-pelayanan.PNG', github:'https://github.com/khoirulanam5/pelayanan.git', desc:'Sistem pelayanan warga negara asing berbasis web untuk mempermudah proses administrasi, pendataan, dan monitoring status permohonan izin.', images:['images/Porto28-pelayanan.PNG'] },
-  { id:27, title:'Aplikasi Pengajuan UMKM', stack:['PHP','MySQL','Bootstrap'], img:'images/Porto27-umkm.JPG', github:'https://github.com/khoirulanam5/umkm.git', desc:'Sistem pengajuan dan verifikasi UMKM online untuk memudahkan proses registrasi, validasi data usaha, dan pelaporan kepada dinas terkait.', images:['images/Porto27-umkm.JPG'] },
-  { id:26, title:'Aplikasi Task Management', stack:['Laravel 12','MySQL','Bootstrap'], img:'images/Porto26-task.JPG', github:'https://github.com/khoirulanam5/task_management.git', desc:'Aplikasi manajemen tugas tim dengan fitur kanban board, assignment anggota, deadline tracker, dan progress monitoring secara real-time.', images:['images/Porto26-task.JPG'] },
-  { id:25, title:'Aplikasi Warehouse Inventori', stack:['Laravel 12','MySQL','Bootstrap'], img:'images/Porto25-warehouse.JPG', github:'https://github.com/khoirulanam5/warehouse.git', desc:'Sistem manajemen gudang komprehensif dengan fitur pencatatan stok, penerimaan dan pengeluaran barang, serta laporan inventory secara periodik.', images:['images/Porto25-warehouse.JPG'] },
-  { id:24, title:'Aplikasi Pengadaan Barang', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto24-pengadaan.PNG', github:'https://github.com/khoirulanam5/pengadaan-barang.git', desc:'Sistem pengadaan barang yang mengotomatisasi proses permintaan, persetujuan, pembelian, dan penerimaan barang dalam satu platform terintegrasi.', images:['images/Porto24-pengadaan.PNG'] },
-  { id:23, title:'Aplikasi E-Perpustakaan', stack:['CodeIgniter 4','MySQL','Bootstrap'], img:'images/Porto23-perpus-qr.PNG', github:'https://github.com/khoirulanam5/perpus-qr.git', desc:'Perpustakaan digital dengan fitur QR code untuk peminjaman buku, pencarian koleksi, manajemen anggota, dan notifikasi pengembalian otomatis.', images:['images/Porto23-perpus-qr.PNG'] },
-  { id:22, title:'Aplikasi Order Makanan', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto22-ma.PNG', github:'https://github.com/khoirulanam5/menu-ordering.git', desc:'Sistem pemesanan makanan berbasis web dengan tampilan menu interaktif, keranjang belanja, manajemen meja, dan dapur order real-time.', images:['images/Porto22-ma.PNG'] },
-  { id:21, title:'Aplikasi Stok Obat', stack:['PHP','MySQL','Bootstrap'], img:'images/Porto21-stock_obat.PNG', github:'https://github.com/khoirulanam5/stock-obat.git', desc:'Sistem manajemen stok obat apotek dengan fitur notifikasi stok menipis, expired date monitoring, dan laporan penggunaan obat bulanan.', images:['images/Porto21-stock_obat.PNG'] },
-  { id:20, title:'Inventori Toko Ban Motor', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto20-inventori_ban.PNG', github:'https://github.com/khoirulanam5/inventori-toko-ban.git', desc:'Sistem inventori khusus toko ban motor dengan manajemen stok berdasarkan ukuran, merk, dan tipe ban, serta laporan penjualan harian.', images:['images/Porto20-inventori_ban.PNG'] },
-  { id:19, title:'Seleksi Siswa Berprestasi', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto19-profile_match.PNG', github:'https://github.com/khoirulanam5/profile-match.git', desc:'Sistem pendukung keputusan seleksi siswa berprestasi menggunakan metode Profile Matching dengan kriteria akademik dan non-akademik terukur.', images:['images/Porto19-profile_match.PNG'] },
-  { id:18, title:'Aplikasi Rekam Medis', stack:['CodeIgniter 3','MySQL','Bootstrap'], img:'images/Porto18-rm.PNG', github:'https://github.com/khoirulanam5/rekam-medis.git', desc:'Sistem rekam medis elektronik untuk klinik dan puskesmas dengan fitur riwayat kunjungan, resep digital, dan laporan statistik kesehatan.', images:['images/Porto18-rm.PNG'] },
+  { 
+    id: 33, 
+    title: 'Rekomendasi Hotel (Apriori & FP-Growth)', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/33.fpgrowth/1.PNG', 
+    github: 'https://github.com/khoirulanam5/Hotel-Room-Facility-Recommendation-System-with-Apriori-and-FP-Growth.git', 
+    desc: 'Sistem rekomendasi fasilitas kamar hotel menggunakan algoritma Apriori dan FP-Growth untuk menemukan pola asosiasi dari data transaksi tamu secara efisien.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/33.fpgrowth/${i + 1}.PNG`)
+  },
+  { 
+    id: 32, 
+    title: 'Aplikasi Manajemen Kasir', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/32.kasir/8.PNG', 
+    github: 'https://github.com/khoirulanam5/kasir.git', 
+    desc: 'Aplikasi kasir berbasis web untuk manajemen transaksi penjualan, stok produk, laporan harian, dan pengelolaan data pelanggan secara real-time.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/32.kasir/${i + 1}.PNG`)
+  },
+  { 
+    id: 31, 
+    title: 'Aplikasi Bantuan Alat Pertanian', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/31.sipbap/1.PNG', 
+    github: 'https://github.com/khoirulanam5/sipbap.git', 
+    desc: 'Sistem informasi pengajuan dan pengelolaan bantuan alat pertanian untuk memfasilitasi proses administrasi antara petani dan dinas terkait.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/31.sipbap/${i + 1}.PNG`)
+  },
+  { 
+    id: 30, 
+    title: 'Aplikasi Bimbingan Konseling', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstrap'], 
+    img: 'images/30.bk/1.png', 
+    github: 'https://github.com/khoirulanam5/bimbingan-konseling.git', 
+    desc: 'Sistem manajemen bimbingan konseling siswa yang memfasilitasi pencatatan sesi konseling, laporan perkembangan, dan komunikasi antara guru BK dan siswa.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/30.bk/${i + 1}.png`)
+  },
+  { 
+    id: 29, 
+    title: 'Aplikasi Berita Acara', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/29.bap/1.PNG', 
+    github: 'https://github.com/khoirulanam5/bap-imigrasi.git', 
+    desc: 'Sistem pengelolaan berita acara pemeriksaan digital untuk kantor imigrasi, dilengkapi fitur tanda tangan digital dan arsip dokumen.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/29.bap/${i + 1}.PNG`)
+  },
+  { 
+    id: 28, 
+    title: 'Aplikasi Pelayanan WNA', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/28.pelayanan/1.PNG', 
+    github: 'https://github.com/khoirulanam5/pelayanan.git', 
+    desc: 'Sistem pelayanan warga negara asing berbasis web untuk mempermudah proses administrasi, pendataan, dan monitoring status permohonan izin.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/28.pelayanan/${i + 1}.PNG`)
+  },
+  { 
+    id: 27, 
+    title: 'Aplikasi Pengajuan UMKM', 
+    stack: ['PHP', 'MySQL', 'Bootstrap'], 
+    img: 'images/27.umkm/1.PNG', 
+    github: 'https://github.com/khoirulanam5/umkm.git', 
+    desc: 'Sistem pengajuan dan verifikasi UMKM online untuk memudahkan proses registrasi, validasi data usaha, dan pelaporan kepada dinas terkait.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/27.umkm/${i + 1}.PNG`)
+  },
+  { 
+    id: 26, 
+    title: 'Aplikasi Warehouse Inventori', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstrap'], 
+    img: 'images/26.warehouse/1.PNG', 
+    github: 'https://github.com/khoirulanam5/warehouse.git', 
+    desc: 'Sistem manajemen gudang komprehensif dengan fitur pencatatan stok, penerimaan dan pengeluaran barang, serta laporan inventory secara periodik.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/26.warehouse/${i + 1}.PNG`)
+  },
+  { 
+    id: 25, 
+    title: 'Aplikasi Pengadaan Barang', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/25.pengadaan/2.PNG', 
+    github: 'https://github.com/khoirulanam5/pengadaan-barang.git', 
+    desc: 'Sistem pengadaan barang yang mengotomatisasi proses permintaan, persetujuan, pembelian, dan penerimaan barang dalam satu platform terintegrasi.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/25.pengadaan/${i + 1}.PNG`)
+  },
+  { 
+    id: 24, 
+    title: 'Aplikasi E-Perpustakaan', 
+    stack: ['CodeIgniter 4', 'MySQL', 'Bootstrap'], 
+    img: 'images/24.perpus-qr/9.PNG', 
+    github: 'https://github.com/khoirulanam5/perpus-qr.git', 
+    desc: 'Perpustakaan digital dengan fitur QR code untuk peminjaman buku, pencarian koleksi, manajemen anggota, dan notifikasi pengembalian otomatis.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/24.perpus-qr/${i + 1}.PNG`)
+  },
+  { 
+    id: 23, 
+    title: 'Aplikasi Order Makanan', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/23.ma/1.PNG', 
+    github: 'https://github.com/khoirulanam5/menu-ordering.git', 
+    desc: 'Sistem pemesanan makanan berbasis web dengan tampilan menu interaktif, keranjang belanja, manajemen meja, dan dapur order real-time.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/23.ma/${i + 1}.PNG`)
+  },
+  { 
+    id: 22, 
+    title: 'Aplikasi Stok Obat', 
+    stack: ['PHP', 'MySQL', 'Bootstrap'], 
+    img: 'images/22.stock-obat/2.PNG', 
+    github: 'https://github.com/khoirulanam5/stock-obat.git', 
+    desc: 'Sistem manajemen stok obat apotek dengan fitur notifikasi stok menipis, expired date monitoring, dan laporan penggunaan obat bulanan.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/22.stock-obat/${i + 1}.PNG`)
+  },
+  { 
+    id: 21, 
+    title: 'Inventori Toko Ban Motor', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/21.inventori-ban/5.PNG', 
+    github: 'https://github.com/khoirulanam5/inventori-toko-ban.git', 
+    desc: 'Sistem inventori khusus toko ban motor dengan manajemen stok berdasarkan ukuran, merk, dan tipe ban, serta laporan penjualan harian.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/21.inventori-ban/${i + 1}.PNG`)
+  },
+  { 
+    id: 20, 
+    title: 'Seleksi Siswa Berprestasi', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/20.profile-match/9.PNG', 
+    github: 'https://github.com/khoirulanam5/profile-match.git', 
+    desc: 'Sistem pendukung keputusan seleksi siswa berprestasi menggunakan metode Profile Matching dengan kriteria akademik dan non-akademik terukur.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/20.profile-match/${i + 1}.PNG`)
+  },
+  { 
+    id: 19, 
+    title: 'Aplikasi Rekam Medis', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
+    img: 'images/19.rm/8.PNG', 
+    github: 'https://github.com/khoirulanam5/rekam-medis.git', 
+    desc: 'Sistem rekam medis elektronik untuk klinik dan puskesmas dengan fitur riwayat kunjungan, resep digital, dan laporan statistik kesehatan.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/19.rm/${i + 1}.PNG`)
+  },
   {
-    id: 17,
+    id: 18,
     title: 'Aplikasi Menentukan Siswa Terbaik',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/18.topsis/6.PNG',
@@ -26,7 +145,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/18.topsis/${i + 1}.PNG`)
   },
   {
-    id: 16,
+    id: 17,
     title: 'Aplikasi Manajemen Terminal',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/17.terminal/2.PNG',
@@ -35,7 +154,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/17.terminal/${i + 1}.PNG`)
   },
   {
-    id: 15,
+    id: 16,
     title: 'Aplikasi Manajemen Catering',
     stack: ['PHP', 'MySQL', 'Bootstrap'],
     img: 'images/16.catering/1.PNG',
@@ -44,7 +163,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/16.catering/${i + 1}.PNG`)
   },
   {
-    id: 14,
+    id: 15,
     title: 'Aplikasi Rental Mobil',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/15.rental/4.PNG',
@@ -53,7 +172,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/15.rental/${i + 1}.PNG`)
   },
   {
-    id: 13,
+    id: 14,
     title: 'Aplikasi Manajemen Klinik',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/14.siluka/5.PNG',
@@ -62,7 +181,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/14.siluka/${i + 1}.PNG`)
   },
   {
-    id: 12,
+    id: 13,
     title: 'Aplikasi Penjualan Aquarium',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/13.aquarium/8.PNG',
@@ -71,7 +190,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/13.aquarium/${i + 1}.PNG`)
   },
   {
-    id: 11,
+    id: 12,
     title: 'Aplikasi Monitoring Data Stunting',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/12.stunting/9.PNG',
@@ -80,7 +199,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/12.stunting/${i + 1}.PNG`)
   },
   {
-    id: 10,
+    id: 11,
     title: 'Aplikasi Inventaris',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/11.inventaris/1.PNG',
@@ -89,7 +208,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/11.inventaris/${i + 1}.PNG`)
   },
   {
-    id: 9,
+    id: 10,
     title: 'Aplikasi KPI Karyawan',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/10.kpikinerja/10.PNG',
@@ -98,7 +217,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/10.kpikinerja/${i + 1}.PNG`)
   },
   {
-    id: 8,
+    id: 9,
     title: 'Aplikasi Maintenance Kendaraan',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/9.maintenance/6.PNG',
@@ -107,7 +226,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/9.maintenance/${i + 1}.PNG`)
   },
   {
-    id: 7,
+    id: 8,
     title: 'Aplikasi Persuratan',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/8.surat/4.PNG',
@@ -116,7 +235,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/8.surat/${i + 1}.PNG`)
   },
   {
-    id: 6,
+    id: 7,
     title: 'Aplikasi Presensi',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/7.presensi/1.PNG',
@@ -125,7 +244,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/7.presensi/${i + 1}.PNG`)
   },
   {
-    id: 5,
+    id: 6,
     title: 'Aplikasi Inventori',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/6.inventori/2.PNG',
@@ -134,7 +253,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/6.inventori/${i + 1}.PNG`)
   },
   {
-    id: 4,
+    id: 5,
     title: 'Aplikasi Penjualan Hijab',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/5.tasbiha/1.PNG',
@@ -143,7 +262,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/5.tasbiha/${i + 1}.PNG`)
   },
   {
-    id: 3,
+    id: 4,
     title: 'Aplikasi Penjualan Sparepart',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/4.sparepart/5.PNG',
@@ -152,7 +271,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/4.sparepart/${i + 1}.PNG`)
   },
   {
-    id: 2,
+    id: 3,
     title: 'Inventori Bahan Baku Roti',
     stack: ['PHP', 'MySQL', 'Bootstrap'],
     img: 'images/3.roti/1.PNG',
@@ -161,7 +280,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/3.roti/${i + 1}.PNG`)
   },
   {
-    id: 1,
+    id: 2,
     title: 'Aplikasi E-Tiket & Penyewaan Bus',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'],
     img: 'images/2.bus/6.PNG',
@@ -170,7 +289,7 @@ const projects = [
     images: Array.from({ length: 10 }, (_, i) => `images/2.bus/${i + 1}.PNG`)
   },
   {
-    id: 0,
+    id: 1,
     title: 'Aplikasi Pengajuan Cuti Pegawai',
     stack: ['PHP', 'MySQL', 'Bootstrap'],
     img: 'images/1.cuti/1.PNG',
