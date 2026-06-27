@@ -31,10 +31,10 @@ const projects = [
     id: 30, 
     title: 'Aplikasi Bimbingan Konseling', 
     stack: ['Laravel 12', 'MySQL', 'Bootstrap'], 
-    img: 'images/30.bk/1.png', 
+    img: 'images/30.bk/1.PNG', 
     github: 'https://github.com/khoirulanam5/bimbingan-konseling.git', 
     desc: 'Sistem manajemen bimbingan konseling siswa yang memfasilitasi pencatatan sesi konseling, laporan perkembangan, dan komunikasi antara guru BK dan siswa.', 
-    images: Array.from({ length: 10 }, (_, i) => `images/30.bk/${i + 1}.png`)
+    images: Array.from({ length: 10 }, (_, i) => `images/30.bk/${i + 1}.PNG`)
   },
   { 
     id: 29, 
