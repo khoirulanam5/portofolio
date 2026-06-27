@@ -2,7 +2,7 @@
 const projects = [
   { 
     id: 33, 
-    title: 'Rekomendasi Hotel (Apriori & FP-Growth)', 
+    title: 'Aplikasi Rekomendasi Kamar Hotel', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstrap'], 
     img: 'images/33.fpgrowth/1.PNG', 
     github: 'https://github.com/khoirulanam5/Hotel-Room-Facility-Recommendation-System-with-Apriori-and-FP-Growth.git', 
