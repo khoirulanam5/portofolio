@@ -1,6 +1,60 @@
 /* ── Project data ── */
 const projects = [
   { 
+    id: 39, 
+    title: 'Aplikasi Inventory (ROP & Safety Stock)', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/39.rrfactory/1.PNG', 
+    github: 'https://github.com/khoirulanam5/sistem-inventory-rop-safety-stock.git', 
+    desc: 'Sistem informasi inventory berbasis web yang mengotomatisasi pencatatan barang masuk dan keluar serta stok bahan baku secara real-time, menerapkan metode Reorder Point (ROP) dan Safety Stock untuk menentukan waktu pemesanan ulang yang tepat guna mencegah kehabisan bahan baku.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/39.rrfactory/${i + 1}.PNG`)
+  },
+  { 
+    id: 38, 
+    title: 'Aplikasi Monitoring Kios Pasar Berbasis Lokasi (SAW)', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/38.saw-kios/3.PNG', 
+    github: 'https://github.com/khoirulanam5/monitoring-kios-pasar-saw.git', 
+    desc: 'Sistem informasi monitoring kios pasar tradisional berbasis lokasi yang menyajikan status dan tingkat okupansi kios secara real-time, dilengkapi metode Simple Additive Weighting (SAW) untuk menentukan prioritas penanganan kios kosong berdasarkan aksesibilitas, lokasi, biaya sewa, dan okupansi.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/38.saw-kios/${i + 1}.PNG`)
+  },
+  { 
+    id: 37, 
+    title: 'Aplikasi Rekomendasi Kustomisasi Furniture (Fuzzy & Knapsack)', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/37.ristianjaya/7.PNG', 
+    github: 'https://github.com/khoirulanam5/sistem-rekomendasi-furniture-fuzzy-knapsack.git', 
+    desc: 'Sistem rekomendasi kustomisasi furniture menggunakan metode Fuzzy Logic Mamdani untuk menilai kecocokan dimensi dan harga, serta algoritma Knapsack untuk memilih kombinasi furniture terbaik sesuai luas ruangan dan anggaran, dilengkapi visualisasi tata letak 3D.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/37.ristianjaya/${i + 1}.PNG`)
+  },
+  { 
+    id: 36, 
+    title: 'Aplikasi SPK Prioritas Restok Barang (SAW)', 
+    stack: ['CodeIgniter 4', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/36.saw-stock/1.PNG', 
+    github: 'https://github.com/khoirulanam5/spk-restok-saw-tokobangunan.git', 
+    desc: 'Sistem Pendukung Keputusan penentuan prioritas restok barang menggunakan metode Simple Additive Weighting (SAW) berdasarkan kriteria jumlah stok, tingkat penjualan, harga, lead time, dan tingkat permintaan, guna membantu toko bangunan mengontrol persediaan secara lebih objektif.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/36.saw-stock/${i + 1}.PNG`)
+  },
+  { 
+    id: 35, 
+    title: 'Aplikasi SPK Pemilihan Smartphone Terbaik', 
+    stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/35.spk-maut/2.PNG', 
+    github: 'https://github.com/khoirulanam5/spk-maut.git', 
+    desc: 'Sistem Pendukung Keputusan pemilihan smartphone terbaik menggunakan metode Multi Attribute Utility Theory (MAUT) dengan multi-role (Owner, Admin, Customer), menghasilkan perangkingan smartphone berdasarkan kriteria dan bobot yang ditentukan.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/35.spk-maut/${i + 1}.PNG`)
+  },
+  { 
+    id: 34, 
+    title: 'Aplikasi Restourant', 
+    stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
+    img: 'images/34.resto/1.PNG', 
+    github: 'https://github.com/khoirulanam5/sim-resto.git', 
+    desc: 'Sistem informasi manajemen restoran berbasis web yang mengelola alur pemesanan dari kasir ke dapur, pencatatan transaksi penjualan, serta manajemen stok bahan baku menggunakan metode First In First Out (FIFO) untuk mengurangi risiko bahan baku kedaluwarsa.', 
+    images: Array.from({ length: 10 }, (_, i) => `images/34.resto/${i + 1}.PNG`)
+  },
+  { 
     id: 33, 
     title: 'Aplikasi Rekomendasi Kamar Hotel', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
