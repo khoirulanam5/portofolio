@@ -90,7 +90,7 @@ nav.scrolled { padding: .85rem 5%; }
   right: 5%;
   height: 68px;
   align-items: center;
-  z-index: 99;
+  z-index: 101;
   background: transparent;
   transition: height .3s;
   /* Not a drawer on desktop */
