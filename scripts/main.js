@@ -2,7 +2,7 @@
 const projects = [
   { 
     id: 39, 
-    title: 'Aplikasi Inventory (ROP & Safety Stock)', 
+    title: 'InvenROP', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/39.rrfactory/1.PNG', 
     github: 'https://github.com/khoirulanam5/sistem-inventory-rop-safety-stock.git', 
@@ -11,7 +11,7 @@ const projects = [
   },
   { 
     id: 38, 
-    title: 'Aplikasi Monitoring Kios Pasar Berbasis Lokasi (SAW)', 
+    title: 'SIMKIOS', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/38.saw-kios/3.PNG', 
     github: 'https://github.com/khoirulanam5/monitoring-kios-pasar-saw.git', 
@@ -20,7 +20,7 @@ const projects = [
   },
   { 
     id: 37, 
-    title: 'Aplikasi Rekomendasi Kustomisasi Furniture (Fuzzy & Knapsack)', 
+    title: 'FurniFit', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/37.ristianjaya/7.PNG', 
     github: 'https://github.com/khoirulanam5/sistem-rekomendasi-furniture-fuzzy-knapsack.git', 
@@ -29,7 +29,7 @@ const projects = [
   },
   { 
     id: 36, 
-    title: 'Aplikasi SPK Prioritas Restok Barang (SAW)', 
+    title: 'SPK-Restok', 
     stack: ['CodeIgniter 4', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/36.saw-stock/1.PNG', 
     github: 'https://github.com/khoirulanam5/spk-restok-saw-tokobangunan.git', 
@@ -38,7 +38,7 @@ const projects = [
   },
   { 
     id: 35, 
-    title: 'Aplikasi SPK Pemilihan Smartphone Terbaik', 
+    title: 'PhoneRank', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/35.spk-maut/2.PNG', 
     github: 'https://github.com/khoirulanam5/spk-maut.git', 
@@ -47,7 +47,7 @@ const projects = [
   },
   { 
     id: 34, 
-    title: 'Aplikasi Restourant', 
+    title: 'SIM-Resto', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/34.resto/1.PNG', 
     github: 'https://github.com/khoirulanam5/sim-resto.git', 
@@ -56,7 +56,7 @@ const projects = [
   },
   { 
     id: 33, 
-    title: 'Aplikasi Rekomendasi Kamar Hotel', 
+    title: 'HotelRec', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/33.fpgrowth/1.PNG', 
     github: 'https://github.com/khoirulanam5/Hotel-Room-Facility-Recommendation-System-with-Apriori-and-FP-Growth.git', 
@@ -65,7 +65,7 @@ const projects = [
   },
   { 
     id: 32, 
-    title: 'Aplikasi Manajemen Kasir', 
+    title: 'SIKASIR', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/32.kasir/8.PNG', 
     github: 'https://github.com/khoirulanam5/kasir.git', 
@@ -74,7 +74,7 @@ const projects = [
   },
   { 
     id: 31, 
-    title: 'Aplikasi Bantuan Alat Pertanian', 
+    title: 'SIPBAP', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/31.sipbap/1.PNG', 
     github: 'https://github.com/khoirulanam5/sipbap.git', 
@@ -83,7 +83,7 @@ const projects = [
   },
   { 
     id: 30, 
-    title: 'Aplikasi Bimbingan Konseling', 
+    title: 'SIBK', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/30.bk/1.PNG', 
     github: 'https://github.com/khoirulanam5/bimbingan-konseling.git', 
@@ -92,7 +92,7 @@ const projects = [
   },
   { 
     id: 29, 
-    title: 'Aplikasi Berita Acara', 
+    title: 'E-BAP', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/29.bap/1.PNG', 
     github: 'https://github.com/khoirulanam5/bap-imigrasi.git', 
@@ -101,7 +101,7 @@ const projects = [
   },
   { 
     id: 28, 
-    title: 'Aplikasi Pelayanan WNA', 
+    title: 'SIPELWA', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/28.pelayanan/1.PNG', 
     github: 'https://github.com/khoirulanam5/pelayanan.git', 
@@ -110,7 +110,7 @@ const projects = [
   },
   { 
     id: 27, 
-    title: 'Aplikasi Pengajuan UMKM', 
+    title: 'E-UMKM', 
     stack: ['PHP', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/27.umkm/1.PNG', 
     github: 'https://github.com/khoirulanam5/umkm.git', 
@@ -119,7 +119,7 @@ const projects = [
   },
   { 
     id: 26, 
-    title: 'Aplikasi Warehouse Inventori', 
+    title: 'WMS Gudang', 
     stack: ['Laravel 12', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/26.warehouse/1.PNG', 
     github: 'https://github.com/khoirulanam5/warehouse.git', 
@@ -128,7 +128,7 @@ const projects = [
   },
   { 
     id: 25, 
-    title: 'Aplikasi Pengadaan Barang', 
+    title: 'E-Pengadaan', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/25.pengadaan/2.PNG', 
     github: 'https://github.com/khoirulanam5/pengadaan-barang.git', 
@@ -137,7 +137,7 @@ const projects = [
   },
   { 
     id: 24, 
-    title: 'Aplikasi E-Perpustakaan', 
+    title: 'PerpusQR', 
     stack: ['CodeIgniter 4', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/24.perpus-qr/9.PNG', 
     github: 'https://github.com/khoirulanam5/perpus-qr.git', 
@@ -146,7 +146,7 @@ const projects = [
   },
   { 
     id: 23, 
-    title: 'Aplikasi Order Makanan', 
+    title: 'MenuOrder', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/23.ma/1.PNG', 
     github: 'https://github.com/khoirulanam5/menu-ordering.git', 
@@ -155,7 +155,7 @@ const projects = [
   },
   { 
     id: 22, 
-    title: 'Aplikasi Stok Obat', 
+    title: 'SIMOBAT', 
     stack: ['PHP', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/22.stock-obat/2.PNG', 
     github: 'https://github.com/khoirulanam5/stock-obat.git', 
@@ -164,7 +164,7 @@ const projects = [
   },
   { 
     id: 21, 
-    title: 'Inventori Toko Ban Motor', 
+    title: 'InvenBan', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/21.inventori-ban/5.PNG', 
     github: 'https://github.com/khoirulanam5/inventori-toko-ban.git', 
@@ -173,7 +173,7 @@ const projects = [
   },
   { 
     id: 20, 
-    title: 'Seleksi Siswa Berprestasi', 
+    title: 'SPK-Prestasi', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/20.profile-match/9.PNG', 
     github: 'https://github.com/khoirulanam5/profile-match.git', 
@@ -182,7 +182,7 @@ const projects = [
   },
   { 
     id: 19, 
-    title: 'Aplikasi Rekam Medis', 
+    title: 'SIREMED', 
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'], 
     img: 'images/19.rm/8.PNG', 
     github: 'https://github.com/khoirulanam5/rekam-medis.git', 
@@ -191,7 +191,7 @@ const projects = [
   },
   {
     id: 18,
-    title: 'Aplikasi Menentukan Siswa Terbaik',
+    title: 'TopSiswa',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/18.topsis/6.PNG',
     github: 'https://github.com/khoirulanam5/topsis.git',
@@ -200,7 +200,7 @@ const projects = [
   },
   {
     id: 17,
-    title: 'Aplikasi Manajemen Terminal',
+    title: 'SIMTER',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/17.terminal/2.PNG',
     github: 'https://github.com/khoirulanam5/manajemen-terminal.git',
@@ -209,7 +209,7 @@ const projects = [
   },
   {
     id: 16,
-    title: 'Aplikasi Manajemen Catering',
+    title: 'SIMCATER',
     stack: ['PHP', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/16.catering/1.PNG',
     github: 'https://github.com/khoirulanam5/manajemen-pemesanan-catering.git',
@@ -218,7 +218,7 @@ const projects = [
   },
   {
     id: 15,
-    title: 'Aplikasi Rental Mobil',
+    title: 'RentCar',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/15.rental/4.PNG',
     github: 'https://github.com/khoirulanam5/rental-mobil.git',
@@ -227,7 +227,7 @@ const projects = [
   },
   {
     id: 14,
-    title: 'Aplikasi Manajemen Klinik',
+    title: 'SILUKA',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/14.siluka/5.PNG',
     github: 'https://github.com/khoirulanam5/siluka.git',
@@ -236,7 +236,7 @@ const projects = [
   },
   {
     id: 13,
-    title: 'Aplikasi Penjualan Aquarium',
+    title: 'AquaShop',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/13.aquarium/8.PNG',
     github: 'https://github.com/khoirulanam5/penjualan-aquarium.git',
@@ -245,7 +245,7 @@ const projects = [
   },
   {
     id: 12,
-    title: 'Aplikasi Monitoring Data Stunting',
+    title: 'E-Stunting',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/12.stunting/9.PNG',
     github: 'https://github.com/khoirulanam5/sistem-monitoring-stunting.git',
@@ -254,7 +254,7 @@ const projects = [
   },
   {
     id: 11,
-    title: 'Aplikasi Inventaris',
+    title: 'SIAS-RS',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/11.inventaris/1.PNG',
     github: 'https://github.com/khoirulanam5/inventaris-barang-non-medis-rs.git',
@@ -263,7 +263,7 @@ const projects = [
   },
   {
     id: 10,
-    title: 'Aplikasi KPI Karyawan',
+    title: 'SIKINERJA',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/10.kpikinerja/10.PNG',
     github: 'https://github.com/khoirulanam5/kpi-kinerja.git',
@@ -272,7 +272,7 @@ const projects = [
   },
   {
     id: 9,
-    title: 'Aplikasi Maintenance Kendaraan',
+    title: 'E-Maintenance',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/9.maintenance/6.PNG',
     github: 'https://github.com/khoirulanam5/Emaintenance.git',
@@ -281,7 +281,7 @@ const projects = [
   },
   {
     id: 8,
-    title: 'Aplikasi Persuratan',
+    title: 'E-Surat',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/8.surat/4.PNG',
     github: 'https://github.com/khoirulanam5/persuratan.git',
@@ -290,7 +290,7 @@ const projects = [
   },
   {
     id: 7,
-    title: 'Aplikasi Presensi',
+    title: 'E-Presensi',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/7.presensi/1.PNG',
     github: 'https://github.com/khoirulanam5/presensi.git',
@@ -299,7 +299,7 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Aplikasi Inventori',
+    title: 'SIM-Inventori',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/6.inventori/2.PNG',
     github: 'https://github.com/khoirulanam5/inventori.git',
@@ -308,7 +308,7 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Aplikasi Penjualan Hijab',
+    title: 'TaStore',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/5.tasbiha/1.PNG',
     github: 'https://github.com/khoirulanam5/penjualan_hijab.git',
@@ -317,7 +317,7 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Aplikasi Penjualan Sparepart',
+    title: 'SparepartKu',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/4.sparepart/5.PNG',
     github: 'https://github.com/khoirulanam5/penjualan_sparepart.git',
@@ -326,7 +326,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Inventori Bahan Baku Roti',
+    title: 'StokRoti',
     stack: ['PHP', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/3.roti/1.PNG',
     github: 'https://github.com/khoirulanam5/inventori-bahan-roti-fifo.git',
@@ -335,7 +335,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Aplikasi E-Tiket & Penyewaan Bus',
+    title: 'E-Tiket Bus',
     stack: ['CodeIgniter 3', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/2.bus/6.PNG',
     github: 'https://github.com/khoirulanam5/E-Tiket.git',
@@ -344,7 +344,7 @@ const projects = [
   },
   {
     id: 1,
-    title: 'Aplikasi Pengajuan Cuti Pegawai',
+    title: 'E-Cuti',
     stack: ['PHP', 'MySQL', 'Bootstraps', 'JavaScript'],
     img: 'images/1.cuti/1.PNG',
     github: 'https://github.com/khoirulanam5/Sistem-Pengajuan-Cuti-Pegawai-Berbasis-Web.git',
